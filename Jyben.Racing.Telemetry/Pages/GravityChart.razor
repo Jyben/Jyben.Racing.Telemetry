@@ -1,0 +1,9 @@
+﻿@using Blazor.Extensions.Canvas
+
+<label>Lateral force : @_gX G</label>
+<br />
+<label>Straight force : @_gY G</label>
+
+<div style="margin-top:50px;border:1px solid black;height:100px;width:100px">
+    <BECanvas Width="100" Height="100" @ref="_canvasReference"></BECanvas>
+</div>

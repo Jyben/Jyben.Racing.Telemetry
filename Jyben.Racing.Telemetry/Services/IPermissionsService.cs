@@ -3,6 +3,5 @@
     public interface IPermissionsService
     {
         Task<bool> CheckLocationPermission();
-        Task<bool> CheckSensorsPermission();
     }
 }

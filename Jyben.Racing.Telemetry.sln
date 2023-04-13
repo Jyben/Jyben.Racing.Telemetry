@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jyben.Racing.Telemetry", "Jyben.Racing.Telemetry.csproj", "{2ABFF416-279D-4A6A-BB70-92EB79571528}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jyben.Racing.Telemetry.Infrastructure", "..\Jyben.Racing.Telemetry.Infrastructure\Jyben.Racing.Telemetry.Infrastructure.csproj", "{13D0A204-715E-49CC-A886-36FB9BC49EF4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ACAC0511-B9A7-4E52-A2AF-E334DD9DFE28}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -16,6 +12,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "�
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyben.Racing.Telemetry", "Jyben.Racing.Telemetry\Jyben.Racing.Telemetry.csproj", "{660932B8-CCCC-4036-A9E9-D22A73098326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jyben.Racing.Telemetry.Infrastructure", "Jyben.Racing.Telemetry.Infrastructure\Jyben.Racing.Telemetry.Infrastructure.csproj", "{35EC26DE-D8EA-4F43-BE6B-ABA37528BAC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MobileApp", "MobileApp", "{5EE16B33-FAD3-45E2-890D-E36154A04F6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{2B1C6B2A-300F-4BB2-AA40-390F3A89FE71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,12 +37,24 @@ Global
 		{13D0A204-715E-49CC-A886-36FB9BC49EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13D0A204-715E-49CC-A886-36FB9BC49EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13D0A204-715E-49CC-A886-36FB9BC49EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{660932B8-CCCC-4036-A9E9-D22A73098326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660932B8-CCCC-4036-A9E9-D22A73098326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660932B8-CCCC-4036-A9E9-D22A73098326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660932B8-CCCC-4036-A9E9-D22A73098326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35EC26DE-D8EA-4F43-BE6B-ABA37528BAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35EC26DE-D8EA-4F43-BE6B-ABA37528BAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35EC26DE-D8EA-4F43-BE6B-ABA37528BAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35EC26DE-D8EA-4F43-BE6B-ABA37528BAC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		        SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
 		SolutionGuid = {A66B3CD9-1512-42A9-9CC4-5DA1CBD572DE}
+		SolutionGuid = {A66B3CD9-1512-42A9-9CC4-5DA1CBD572DE}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{660932B8-CCCC-4036-A9E9-D22A73098326} = {5EE16B33-FAD3-45E2-890D-E36154A04F6F}
+		{35EC26DE-D8EA-4F43-BE6B-ABA37528BAC6} = {5EE16B33-FAD3-45E2-890D-E36154A04F6F}
 	EndGlobalSection
 EndGlobal

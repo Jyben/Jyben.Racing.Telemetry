@@ -8,16 +8,9 @@
 
         public async Task<bool> CheckLocationPermission()
         {
-            var statusLocation = await Permissions.RequestAsync<Permissions.LocationAlways>();
+            var statusLocation = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
             
             return statusLocation == PermissionStatus.Granted || statusLocation == PermissionStatus.Restricted;
-        }
-
-        public async Task<bool> CheckSensorsPermission()
-        {
-            var statusSensors = await Permissions.RequestAsync<Permissions.Sensors>();
-
-            return statusSensors == PermissionStatus.Granted;
         }
     }
 }

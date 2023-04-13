@@ -2,7 +2,6 @@
 {
     public class PermissionsModel
     {
-        public bool HasSensorsPermissions { get; set; }
         public bool HasLocationPermissions { get; set; }
     }
 }

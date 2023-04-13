@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Jyben.Racing.Telemetry.Data;
 using Jyben.Racing.Telemetry.Services;
 using Jyben.Racing.Telemetry.Services.Impl;
 using Jyben.Racing.Telemetry.Infrastructure.States;
@@ -8,6 +7,8 @@ namespace Jyben.Racing.Telemetry;
 
 public static class MauiProgram
 {
+    public static IServiceProvider Services { get; private set; }
+
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
@@ -25,9 +26,9 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		builder.Services.AddSingleton<WeatherForecastService>();
 		builder.Services.AddSingleton<IPermissionsService, PermissionsService>();
 		builder.Services.AddSingleton<AppState>();
+		builder.Services.AddSingleton<ITelemetrieArrierePlanService, TelemetrieArrierePlanService>();
 
         return builder.Build();
 	}

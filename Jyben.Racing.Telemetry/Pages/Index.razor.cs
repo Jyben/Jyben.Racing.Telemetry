@@ -16,13 +16,11 @@ namespace Jyben.Racing.Telemetry.Pages
         {
             AppState.OnStateChange += OnAppStateChanged;
 
-            var hasSensorsPermission = await PermissionsService.CheckSensorsPermission();
             var hasLocationPermission = await PermissionsService.CheckLocationPermission();
 
             var permissionsModel = new PermissionsModel()
             {
-                HasLocationPermissions = hasSensorsPermission,
-                HasSensorsPermissions = hasLocationPermission
+                HasLocationPermissions = hasLocationPermission
             };
 
             AppState.SetPermissions(permissionsModel);
